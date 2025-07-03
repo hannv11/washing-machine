@@ -1,0 +1,53 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.025
+Compiler=PCM
+CCSVersion=5.025
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\hanva\HUST\WashingMachine\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=2
+D1=02-07-2025
+D1_L=5
+D1_L1=[84713]Project Opened.
+D1_L2=[84910]Project Closed.
+D1_L3=[85001]Project Opened.
+D1_L4=[85164]Started Editing.
+D1_L5=[85776]Stopped Editing.
+D2=03-07-2025
+D2_L=13
+D2_L1=[18]Started Editing.
+D2_L2=[328]Stopped Editing.
+D2_L3=[539]Started Editing.
+D2_L4=[1598]Stopped Editing.
+D2_L5=[1844]Started Editing.
+D2_L6=[3154]Stopped Editing.
+TotalEdit=56
+TotalDebug=0
+D2_E=56
+D2_D=0
+D2_L7=[3298]Project Closed.
+D2_L8=[43347]Project Opened.
+D2_L9=[43387]Started Editing.
+D2_L10=[44926]Stopped Editing.
+D2_L11=[46054]Started Editing.
+D2_L12=[46057]Stopped Editing.
+D2_L13=[46057]Project Closed.
+
+[Opened Files]
+1=main.c
+2=main.h
+3=
+[main.c]
+Type=4
+[Units]
+Count=1
+1=main (main)

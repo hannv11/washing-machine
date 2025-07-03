@@ -1,0 +1,35 @@
+#include <main.h>
+
+const int8 LED7[3] = {0x7E, 0x30, 0x6D};  // 0, 1, 2
+
+int8 count = 0;
+
+void main()
+{
+
+   int x, y;
+   output_D(0);
+   set_tris_d(0x00);       // PORTD là output
+   set_tris_c(0xFF);       // RC0 là input
+   output_d(LED7[count]);  // Hi?n th? ban d?u là 0
+   
+   while(1)
+   {
+      x = input(PIN_C0);
+      y = input(PIN_C1);
+      if (x == 0) output_low(PIN_B0);
+      if (y == 1) {
+         delay_ms(20); // hold btn
+         if (y == 1) {
+            count++;
+            if (count > 2) count = 0; 
+            output_d(LED7[count]);
+            while (y == 1); // ket thuc khi x = 0
+         }
+      }
+      if (x == 0) output_high(PIN_B0);
+   }
+
+}
+
+

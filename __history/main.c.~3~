@@ -1,0 +1,18 @@
+#include <main.h>
+
+void main()
+{
+
+   int x;
+   output_D(0);
+   
+   while(1)
+   {
+      x = input(PIN_C0);
+      if (x == 1) output_high(PIN_D0);
+      if (x == 0) output_low(PIN_D0);
+   }
+
+}
+
+

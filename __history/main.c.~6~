@@ -1,0 +1,30 @@
+#include <main.h>
+
+const int8 LED7[10] = {0x7E, 0x30, 0x6D, 0x79, 0x33, 0x5B, 0x5F, 0x70, 0x7F, 0x7B};
+
+int8 count = 0;
+
+void main()
+{
+
+   int x;
+   output_D(0);
+   
+   while(1)
+   {
+      x = input(PIN_C0);
+      if (x == 1) {
+         output_low(PIN_D0);
+         delay_ms(20); // debounce
+         if (input(PIN_C0) == 1) {
+            count++;
+            if (count > 9) count = 0;
+            output_d(LED7[count]);
+            while(input(PIN_C0) == 1);
+      }
+      if (x == 0) output_high(PIN_D0);
+   }
+
+}
+
+
